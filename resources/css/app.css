@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Font Setup */
+* {
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Hero Section Image and Styling */
+.hero-bg {
+    background-image: url('/public/images/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#mobile-menu {
+    transition: all 0.5s ease; /* Add transition property */
+}
