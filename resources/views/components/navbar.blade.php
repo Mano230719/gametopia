@@ -25,10 +25,10 @@
                     class="text-gray-300 hover:bg-red-500 hover:text-black px-4 py-2 rounded-xl font-semibold transition duration-300">Shop</a>
             </li>
             <li><a href="#"
-                    class="text-gray-300 hover:bg-red-500 hover:text-black px-4 py-2 rounded-xl font-semibold transition duration-300">Forum</a>
+                    class="text-gray-300 hover:bg-red-500 hover:text-black px-4 py-2 rounded-xl font-semibold transition duration-300">Blog</a>
             </li>
             <li><a href="#"
-                    class="text-gray-300 hover:bg-red-500 hover:text-black px-4 py-2 rounded-xl font-semibold transition duration-300">Blog</a>
+                    class="text-gray-300 hover:bg-red-500 hover:text-black px-4 py-2 rounded-xl font-semibold transition duration-300">Forum</a>
             </li>
         </ul>
 
