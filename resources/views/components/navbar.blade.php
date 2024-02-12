@@ -40,7 +40,7 @@
                 class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300">Register</a>
         </div>
 
-        <!-- Mobile Navigation (Hamburger) -->
+        {{-- <!-- Mobile Navigation (Hamburger) -->
         <div class="md:hidden flex items-center">
             <!-- Login and Register buttons on mobile -->
             <a href="#"
@@ -87,5 +87,5 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> --}}
 </nav>

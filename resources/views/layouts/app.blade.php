@@ -8,6 +8,9 @@
 
     <title>Gametopia</title>
 
+    <!-- AlpineJS Dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/43074c8198.js" crossorigin="anonymous"></script>
 
@@ -27,7 +30,7 @@
 
     <x-footer></x-footer>
 
-    <script src="{{ asset('js/burger-menu.js') }}"></script>
+    {{-- <script src="{{ asset('js/burger-menu.js') }}"></script> --}}
 </body>
 
 </html>
