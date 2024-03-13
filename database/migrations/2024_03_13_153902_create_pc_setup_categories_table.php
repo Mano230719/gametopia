@@ -11,16 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('pc_setup_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('town')->nullable();
-            $table->text('address')->nullable();
-            $table->string('card_number')->nullable();
-            $table->date('card_expiration_date')->nullable();
-            $table->integer('cvc')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('pc_setup_categories');
     }
 };

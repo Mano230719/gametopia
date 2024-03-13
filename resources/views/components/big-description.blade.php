@@ -32,20 +32,18 @@
 
         <div class="col-span-1 bg-gray-200 p-6 rounded-3xl border border-gray-300 shadow-inner">
             <div class="flex items-center">
-                <i class="fa-solid fa-comments text-red-500 text-3xl mr-3 mt-2"></i>
-                <h1 class="text-2xl font-bold mt-2">Forum</h1>
+                <i class="fa-solid fa-computer text-red-500 text-3xl mr-3 mt-2"></i>
+                <h1 class="text-2xl font-bold mt-2">PC Setups</h1>
             </div>
             <hr class="border-red-400 border-t-2 rounded-xl my-8">
             <p class="text-justify mt-2">
-                We also provide a forum where you can ask questions if you are stuck in a game, if you want quick
-                answers to your gaming problems or if you simply want to debate gaming lore or speculations. Also, this
-                forum has a section for PC building and setup, where you can look for and ask about the best PC builds
-                and setups out there, about prices and upcoming hardware, and pretty much anything to suit your needs.
-                Of course, there is also a section for board games, where you can ask people how to play certain games,
-                find out about new incoming stuff and perhaps even arrange meetings so you can play together with
-                likeminded people, who knows you might even make a few friends along the way. All that is required is to
-                remain respectful and mindful of other people's boundaries, so no harrasment and trash talking, ok?
-                We await you with open arms!
+                We also provide a PC Setup Showcase where you can check out different computer setups for different needs.
+                The setup, construction and configuration of a PC has become more complicated over the years, with more and
+                more options for graphics cards, processors, RAM and Motherboards than you can count, with new variations and
+                upgrades yet incoming. Don't know where to start? We've got you covered! We have Setup Showcases for Gaming,
+                Home Office, Content Creation and even Minimalistic ones for people who don't need much more than access to
+                internet. Those are sure to provide at least a starting point in your quest to build your perfect PC.
+                Also, if you're feeling more tech savy, a Build Your Own PC feature is planned for this app, for you to use.
             </p>
         </div>
 
@@ -58,7 +56,7 @@
             <hr class="border-red-400 border-t-2 rounded-xl my-8">
             <p class="text-justify mt-2">
                 Our blog is meant to keep you up to date with new developments of the gaming industry. It is similar to
-                our forum, but has a more direct and focused approach on things. Here you can find out about new
+                a forum, but has a more direct and focused approach on things. Here you can find out about new
                 hardware development and pricing for your PC, games' statuses from alpha to release, new board games and
                 expansions, upcoming events such as GamesCon preparations and development, and many more aspects,
                 opinions and statistics of the gaming world. Its purpose is informational only, and it has no influence
