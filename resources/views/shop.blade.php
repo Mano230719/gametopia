@@ -150,21 +150,17 @@
                     transform: translateY(-50%);
                     width: 55px;
                     height: 55px;
-                    background-color: rgb(239 68 68);
-                    color: white;
-                    border-radius: 50%;
+                    color: black;   
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     cursor: pointer;
-                    border: 2px solid rgb(185, 28, 28);
                     transition: background-color 0.3s, color 0.3s;
                 }
 
                 .swiper-button-next:hover,
                 .swiper-button-prev:hover {
-                    background-color: rgb(220 38 38);
-                    color: black;
+                    color: rgb(220 38 38);
                 }
 
                 .swiper-button-next {

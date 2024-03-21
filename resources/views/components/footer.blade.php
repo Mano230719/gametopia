@@ -54,7 +54,7 @@
      <!-- Bottom Section -->
      <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
          <div class="mb-4 lg:mb-0">
-             &copy; Gametopia 2023 &trade; All Rights Reserved
+             &copy; Gametopia 2024 &trade; All Rights Reserved
          </div>
 
          <!-- Social Icons -->

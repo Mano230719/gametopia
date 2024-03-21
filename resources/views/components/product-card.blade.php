@@ -1,5 +1,5 @@
 <div
-    class="col-span-1 max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white transition-transform transform hover:scale-105">
+    class="col-span-1 max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white transition-transform transform hover:scale-105 hover:shadow-red-200">
     <a href="#">
         <img src="https://picsum.photos/150/100" alt="Product Image" class="w-full h-56 object-cover">
     </a>
