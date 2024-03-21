@@ -21,6 +21,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'town',
+        'address',
+        'credit_card_number',
+        'credit_card_expiration_date',
+        'credit_card_cvc',
     ];
 
     /**
@@ -32,6 +37,18 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    // A user can have multiple comments
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    // A user can have multiple orders
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 
     /**
      * The attributes that should be cast.
