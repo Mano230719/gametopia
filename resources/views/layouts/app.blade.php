@@ -24,11 +24,11 @@
 </head>
 
 <body>
-    <x-navbar></x-navbar>
+    <x-general.navbar></x-general.navbar>
 
     @yield('content')
 
-    <x-footer></x-footer>
+    <x-general.footer></x-general.footer>
 
     {{-- <script src="{{ asset('js/burger-menu.js') }}"></script> --}}
 </body>

@@ -3,12 +3,12 @@
 @section('content')
     <div class="flex">
         <!-- Sidebar -->
-        <x-shop-sidebar></x-shop-sidebar>
+        <x-shop.shop-sidebar></x-shop.shop-sidebar>
 
         <!-- Main Content -->
         <div class="flex-grow p-4">
             <!-- Top Section -->
-            <x-shop-nav></x-shop-nav>
+            <x-shop.shop-nav></x-shop.shop-nav>
 
             <!-- Product Category Carousel -->
             <div class="swiper-container mt-12 mb-6 mx-14">
@@ -24,16 +24,16 @@
                         <!-- Product Cards for PC Games Highlights -->
                         <div class="grid grid-cols-5 gap-8 mb-6 px-14">
                             <!-- Product Card -->
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
                         </div>
                     </div>
 
@@ -48,16 +48,16 @@
                         <!-- Product Cards for PC Components Highlights -->
                         <div class="grid grid-cols-5 gap-8 mb-6 px-14">
                             <!-- Product Card -->
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
                         </div>
                     </div>
 
@@ -72,16 +72,16 @@
                         <!-- Product Cards for Console Games Highlights -->
                         <div class="grid grid-cols-5 gap-8 mb-6 px-14">
                             <!-- Product Card -->
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
                         </div>
                     </div>
 
@@ -96,16 +96,16 @@
                         <!-- Product Cards for Board Games Highlights -->
                         <div class="grid grid-cols-5 gap-8 mb-6 px-14">
                             <!-- Product Card -->
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
-                            <x-product-card></x-product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
+                            <x-shop.product-card></x-shop.product-card>
                         </div>
                     </div>
                 </div>

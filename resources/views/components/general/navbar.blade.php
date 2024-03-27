@@ -6,13 +6,13 @@
             <span class="text-xl text-red-500 font-bold mb-1">Gametopia</span>
             <div class="lg:flex hidden">
                 <i
-                    class="fas fa-gamepad text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 cursor-pointer mx-1"></i>
+                    class="fas fa-gamepad text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 mx-1"></i>
                 <i
-                    class="fas fa-desktop text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 cursor-pointer mx-1"></i>
+                    class="fas fa-desktop text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 mx-1"></i>
                 <i
-                    class="fas fa-microchip text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 cursor-pointer mx-1"></i>
+                    class="fas fa-microchip text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 mx-1"></i>
                 <i
-                    class="fas fa-puzzle-piece text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 cursor-pointer mx-1"></i>
+                    class="fas fa-puzzle-piece text-2xl text-red-500 hover:bg-red-500 hover:text-white rounded-full p-2 mx-1"></i>
             </div>
         </div>
 
