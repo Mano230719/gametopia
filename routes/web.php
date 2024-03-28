@@ -24,3 +24,7 @@ Route::get('shop', function () {
 Route::get('blog', function () {
     return view('blog');
 });
+
+Route::get('setup', function () {
+    return view('setup');
+});
