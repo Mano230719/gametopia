@@ -23,7 +23,7 @@
                         </div>
                         <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                         <!-- Product Cards for PC Games Highlights -->
-                        <div class="grid grid-cols-5 gap-8 mb-6 px-14">
+                        <div class="grid grid-cols-5 gap-4 mb-6 px-14">
                             <!-- Product Card -->
                             <x-shop.product-card></x-shop.product-card>
                             <x-shop.product-card></x-shop.product-card>
@@ -48,7 +48,7 @@
                         </div>
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for PC Components Highlights -->
-                        <div class="grid grid-cols-5 gap-8 mb-6 px-14">
+                        <div class="grid grid-cols-5 gap-4 mb-6 px-14">
                             <!-- Product Card -->
                             <x-shop.product-card></x-shop.product-card>
                             <x-shop.product-card></x-shop.product-card>
@@ -73,7 +73,7 @@
                         </div>
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for Console Games Highlights -->
-                        <div class="grid grid-cols-5 gap-8 mb-6 px-14">
+                        <div class="grid grid-cols-5 gap-4 mb-6 px-14">
                             <!-- Product Card -->
                             <x-shop.product-card></x-shop.product-card>
                             <x-shop.product-card></x-shop.product-card>
@@ -98,7 +98,7 @@
                         </div>
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for Board Games Highlights -->
-                        <div class="grid grid-cols-5 gap-8 mb-6 px-14">
+                        <div class="grid grid-cols-5 gap-4 mb-6 px-14">
                             <!-- Product Card -->
                             <x-shop.product-card></x-shop.product-card>
                             <x-shop.product-card></x-shop.product-card>

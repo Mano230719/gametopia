@@ -25,7 +25,7 @@
                             </div>
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
-                            <div class="grid grid-cols-3 gap-8 mb-6 px-16">
+                            <div class="grid grid-cols-3 gap-4 mb-6 px-16">
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
@@ -48,7 +48,7 @@
                             </div>
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
-                            <div class="grid grid-cols-3 gap-8 mb-6 px-16">
+                            <div class="grid grid-cols-3 gap-4 mb-6 px-16">
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
@@ -71,7 +71,7 @@
                             </div>
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
-                            <div class="grid grid-cols-3 gap-8 mb-6 px-16">
+                            <div class="grid grid-cols-3 gap-4 mb-6 px-16">
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
@@ -94,7 +94,7 @@
                             </div>
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
-                            <div class="grid grid-cols-3 gap-8 mb-6 px-16">
+                            <div class="grid grid-cols-3 gap-4 mb-6 px-16">
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
                                 <x-setup.setup-card></x-setup.setup-card>
