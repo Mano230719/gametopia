@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex">
+    <div class="flex justify-center">
         <!-- Sidebar -->
         <x-shop.shop-sidebar></x-shop.shop-sidebar>
 
         <!-- Main Content -->
-        <div class="flex-grow p-4">
+        <main class="w-5/6 p-4">
             <!-- Top Section -->
             <x-shop.shop-nav></x-shop.shop-nav>
 
@@ -16,7 +16,8 @@
                     <!-- PC Games Slide -->
                     <div class="swiper-slide">
                         <!-- PC Games Highlights Section -->
-                        <div class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
+                        <div
+                            class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
                             <i class="fas fa-desktop text-2xl text-white mr-2 mt-1"></i>
                             <h2 class="text-2xl font-bold text-white">PC Games Highlights</h2>
                         </div>
@@ -40,7 +41,8 @@
                     <!-- PC Components Slide -->
                     <div class="swiper-slide">
                         <!-- PC Components Highlights Section -->
-                        <div class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
+                        <div
+                            class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
                             <i class="fas fa-microchip text-2xl text-white mr-2 mt-1"></i>
                             <h2 class="text-2xl font-bold text-white">PC Components Highlights</h2>
                         </div>
@@ -64,7 +66,8 @@
                     <!-- Console Games Slide -->
                     <div class="swiper-slide">
                         <!-- Console Games Highlights Section -->
-                        <div class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
+                        <div
+                            class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
                             <i class="fas fa-gamepad text-2xl text-white mr-2 mt-1"></i>
                             <h2 class="text-2xl font-bold text-white">Console Games Highlights</h2>
                         </div>
@@ -88,7 +91,8 @@
                     <!-- Board Games Slide -->
                     <div class="swiper-slide">
                         <!-- Board Games Highlights Section -->
-                        <div class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
+                        <div
+                            class="inline-flex items-start bg-red-500 rounded-full py-2 px-4 mt-12 mb-6 mx-14 border border-red-700 shadow-2xl border-b-4">
                             <i class="fas fa-puzzle-piece text-xl text-white mr-2 mt-1"></i>
                             <h2 class="text-2xl font-bold text-white">Board Games Highlights</h2>
                         </div>
@@ -120,27 +124,28 @@
 
             <!-- Swiper Implementation -->
             <script>
-                var swiper = new Swiper('.swiper-container', {
-                    slidesPerView: 'auto',
-                    spaceBetween: 10,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        renderBullet: function (index, className) {
-                        return '<span class="' + className + '">' + (index + 1) + '</span>';
-                    },
-                    },
+                document.addEventListener('DOMContentLoaded', function() {
+                    var swiper = new Swiper('.swiper-container', {
+                        direction: 'horizontal',
+                        loop: true,
+                        slidesPerView: 1,
+                        centeredSlides: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
                 });
             </script>
 
             <!-- Swiper Styling -->
             <style>
                 .swiper-container {
-                position: relative;
+                    position: relative;
                 }
 
                 .swiper-button-next,
@@ -150,7 +155,7 @@
                     transform: translateY(-50%);
                     width: 55px;
                     height: 55px;
-                    color: black;   
+                    color: black;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -171,6 +176,6 @@
                     left: -85px;
                 }
             </style>
-        </div>
+        </main>
     </div>
 @endsection

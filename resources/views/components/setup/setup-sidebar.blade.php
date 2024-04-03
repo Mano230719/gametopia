@@ -1,4 +1,4 @@
-        <aside class="bg-gray-800 text-white w-1/6 flex-shrink-0">
+        <aside class="bg-gray-800 text-white w-1/6 flex-shrink-0 z-20">
             <!-- Sidebar Content -->
             <div class="mt-6 p-4">
                 <!-- Title Section -->

@@ -14,6 +14,9 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/43074c8198.js" crossorigin="anonymous"></script>
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
