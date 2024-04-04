@@ -14,7 +14,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <!-- Gaming Setups Slide -->
-                    <div class="swiper-slide p-16">
+                    <div class="swiper-slide p-8">
                         <!-- Gaming Setups Section -->
                         <div class="mb-8">
                             <!-- Category Title -->
@@ -37,7 +37,7 @@
                     </div>
 
                     <!-- Home Office Setups Slide -->
-                    <div class="swiper-slide p-16">
+                    <div class="swiper-slide p-8">
                         <!-- Home Office Setups Section -->
                         <div class="mb-8">
                             <!-- Category Title -->
@@ -60,7 +60,7 @@
                     </div>
 
                     <!-- Content Creation Setups Slide -->
-                    <div class="swiper-slide p-16">
+                    <div class="swiper-slide p-8">
                         <!-- Content Creation Setups Section -->
                         <div class="mb-8">
                             <!-- Category Title -->
@@ -83,7 +83,7 @@
                     </div>
 
                     <!-- Minimalist Setups Slide -->
-                    <div class="swiper-slide p-16">
+                    <div class="swiper-slide p-8">
                         <!-- Minimalist Setups Section -->
                         <div class="mb-8">
                             <!-- Category Title -->
@@ -141,7 +141,7 @@
         .swiper-button-next,
         .swiper-button-prev {
             position: absolute;
-            top: 112%;
+            top: 108%;
             transform: translateY(-50%);
             width: 55px;
             height: 55px;

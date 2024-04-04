@@ -1,5 +1,5 @@
 <div
-    class="bg-gradient-to-tr from-orange-500 to-fuchsia-600 rounded-3xl py-8 px-4 mt-12 mx-auto w-3/4 border border-gray-400 shadow-xl">
+    class="bg-gradient-to-tr from-orange-500 to-fuchsia-600 rounded-3xl py-8 px-4 mt-16 mx-auto w-3/4 border border-gray-400 shadow-xl">
     <!-- Logo and Title -->
     <div class="flex items-center justify-center mt-8 mb-6">
         <img src="{{ asset('images/logo.png') }}" alt="Gametopia Logo" class="w-12 h-12 mr-2">
