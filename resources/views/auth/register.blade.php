@@ -18,22 +18,32 @@
             </h2>
             <hr class="border-gray-600 mb-8">
             <div class="mb-10 flex items-center justify-center">
-                <label class="block text-red-600 font-bold mr-2 text-center" for="name">Username:</label>
+                <label class="block text-red-600 font-bold mr-2 pr-9 text-center" for="name">Name:</label>
                 <input
                     class="shadow-inner appearance-none rounded-lg  w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center"
-                    id="name" type="text" placeholder="John Doe">
+                    id="name" name="name" type="text" placeholder="John Doe">
             </div>
             <div class="mb-10 flex items-center justify-center">
                 <label class="block text-red-600 font-bold mr-2 pr-9 text-center" for="email">Email:</label>
                 <input
                     class="shadow-inner appearance-none rounded-lg w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center"
-                    id="email" type="email" placeholder="john.doe@gmail.com">
+                    id="email" name="email" type="email" placeholder="john.doe@gmail.com">
             </div>
             <div class="mb-6 flex items-center justify-center">
                 <label class="block text-red-600 font-bold mr-2 pr-1 text-center" for="password">Password:</label>
                 <input
-                    class="shadow-inner appearance-none rounded-lg w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center"
-                    id="password" type="password" placeholder="********">
+                    class="shadow-inner appearance-none rounded-lg w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center @error('password') border-red-500 @enderror"
+                    id="password" name="password" type="password" placeholder="********">
+            </div>
+            @error('password')
+                <p class="text-red-500 text-sm italic">{{ $message }}</p>
+            @enderror
+            <div id="password-requirements" class="hidden mb-2">
+                <ul class="list-disc list-inside text-red-500 text-sm italic">
+                    <li>Password must contain at least one uppercase letter</li>
+                    <li>Password must contain at least two digits</li>
+                    <li>Password must be at least 8 characters long</li>
+                </ul>
             </div>
             <hr class="border-gray-600 mt-8 mb-6">
             <div class="flex items-center justify-between mt-8">
@@ -49,4 +59,17 @@
             </div>
         </form>
     </div>
+
+    <!-- Password Requirements Hide/Show Script -->
+    <script>
+        document.getElementById('password').addEventListener('focus', function() {
+            document.getElementById('password-requirements').classList.remove('hidden');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!event.target.matches('#password')) {
+                document.getElementById('password-requirements').classList.add('hidden');
+            }
+        });
+    </script>
 @endsection

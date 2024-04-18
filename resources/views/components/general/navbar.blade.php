@@ -33,11 +33,47 @@
             </li>
         </ul>
 
-        <!-- Login and Register buttons on the right -->
-        <div class="hidden md:flex space-x-4">
-            <a href="/login"
-                class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300">Login</a>
-            <a href="/register"
-                class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300">Register</a>
-        </div>
+        <!-- Login and Register buttons or User Dropdown on the right -->
+        @if (Auth::check())
+            <!-- User Dropdown -->
+            <div class="relative" x-data="{ userDropdownOpen: false }">
+                <button
+                    class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300"
+                    @click="userDropdownOpen = !userDropdownOpen">
+                    {{ Auth::user()->name }}
+                    <i :class="{ 'fas fa-chevron-down': !userDropdownOpen, 'fas fa-chevron-up': userDropdownOpen }"
+                        class="ml-2"></i>
+                </button>
+                <!-- Dropdown Content -->
+                <div class="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md overflow-hidden shadow-xl z-20"
+                    x-show="userDropdownOpen" @click.away="userDropdownOpen = false">
+                    <a href="#"
+                        class="flex items-center px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
+                        <i class="fas fa-user text-red-500 mr-3 group-hover:text-black"></i>
+                        Profile
+                    </a>
+                    <a href="#"
+                        class="flex items-center px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
+                        <i class="fas fa-cart-shopping text-red-500 mr-2 group-hover:text-black"></i>
+                        My Cart
+                    </a>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit"
+                            class="flex items-center w-full text-left px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
+                            <i class="fas fa-right-from-bracket text-red-500 mr-3 group-hover:text-black"></i>
+                            Logout
+                        </button>
+                    </form>
+                </div>
+            </div>
+        @else
+            <!-- Login and Register buttons -->
+            <div class="hidden md:flex space-x-4">
+                <a href="/login"
+                    class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300">Login</a>
+                <a href="/register"
+                    class="bg-red-500 hover:bg-red-600 text-white hover:text-black py-2 px-4 rounded-xl font-semibold transition duration-300">Register</a>
+            </div>
+        @endif
 </nav>

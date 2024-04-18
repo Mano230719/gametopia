@@ -17,16 +17,16 @@
             </h2>
             <hr class="border-gray-600 mb-8">
             <div class="mb-6 flex items-center justify-center">
-                <label class="block text-red-600 font-bold mr-2 pr-1 text-center" for="username">Username:</label>
+                <label class="block text-red-600 font-bold mr-2 pr-1 text-center" for="email">Email:</label>
                 <input
-                    class="shadow-inner appearance-none rounded-lg  w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center"
-                    id="username" type="text" placeholder="Enter your username">
+                    class="shadow-inner appearance-none rounded-lg w-full ml-9 py-2 px-3 bg-gray-700 text-white leading-tight text-center"
+                    id="email" name="email" type="email" placeholder="Enter your email">
             </div>
             <div class="mb-6 flex items-center justify-center">
                 <label class="block text-red-600 font-bold mr-2 pr-2 text-center" for="password">Password:</label>
                 <input
                     class="shadow-inner appearance-none rounded-lg w-full py-2 px-3 bg-gray-700 text-white leading-tight text-center"
-                    id="password" type="password" placeholder="********">
+                    id="password" name="password" type="password" placeholder="********">
             </div>
             <hr class="border-gray-600 mt-8 mb-6">
             <div class="flex items-center justify-between mt-8">
