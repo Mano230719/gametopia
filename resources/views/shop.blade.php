@@ -8,7 +8,7 @@
         <!-- Main Content -->
         <main class="w-5/6 p-4">
             <!-- Top Section -->
-            <x-shop.shop-nav></x-shop.shop-nav>
+            {{-- <x-shop.shop-nav></x-shop.shop-nav> --}}
 
             <!-- Product Category Carousel -->
             <div class="swiper-container mt-12 mb-6 mx-14">

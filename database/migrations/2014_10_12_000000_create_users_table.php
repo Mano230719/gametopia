@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('password');
             $table->string('town')->nullable();
             $table->text('address')->nullable();
+            $table->integer('postal_code')->nullable();
             $table->string('card_number')->nullable();
-            $table->date('card_expiration_date')->nullable();
+            $table->string('card_expiry')->nullable();
             $table->integer('cvc')->nullable();
             $table->timestamps();
         });

@@ -23,9 +23,10 @@ class User extends Authenticatable
         'password',
         'town',
         'address',
-        'credit_card_number',
-        'credit_card_expiration_date',
-        'credit_card_cvc',
+        'postal_code',
+        'card_number',
+        'card_expiry',
+        'cvc',
     ];
 
     /**

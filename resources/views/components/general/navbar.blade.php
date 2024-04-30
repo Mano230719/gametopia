@@ -47,7 +47,7 @@
                 <!-- Dropdown Content -->
                 <div class="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md overflow-hidden shadow-xl z-20"
                     x-show="userDropdownOpen" @click.away="userDropdownOpen = false">
-                    <a href="#"
+                    <a href="{{ route('profile') }}"
                         class="flex items-center px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
                         <i class="fas fa-user text-red-500 mr-3 group-hover:text-black"></i>
                         Profile
