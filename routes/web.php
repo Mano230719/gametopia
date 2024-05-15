@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Auth\ProfileController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -21,9 +22,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('shop', function () {
-    return view('shop');
-});
+//Shop Routes
+Route::get('shop', [ShopController::class, 'showShop'])->name('shop');
+Route::get('shop/{category}', [ShopController::class, 'showCategory'])->name('shop.category');
+Route::get('shop/{category}/{subCategory}', [ShopController::class, 'showSubcategory'])->name('shop.subcategory');
 
 Route::get('blog', function () {
     return view('blog');

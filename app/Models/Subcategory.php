@@ -10,7 +10,7 @@ class Subcategory extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'sub_category_name',
     ];
 
     // A subcategory can contain multiple products
