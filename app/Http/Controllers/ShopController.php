@@ -15,9 +15,11 @@ class ShopController extends Controller
 
     public function showCategory($category)
     {
-        // Logic to fetch products based on the category
+        // Retrieve category details
         $category = Category::where('category_name', $category)->firstOrFail();
-        $products = $category->products;
+
+        // Retrieve products associated with the category
+        $products = $category->products()->paginate(10);
 
         // Pass products to the view
         return view('category', compact('category', 'products'));
