@@ -14,7 +14,7 @@ class Product extends Model
         'product_image',
         'product_description',
         'price',
-        'stock_quantity',
+        'quantity',
         'category_id',
         'sub_category_id',
     ];
@@ -30,12 +30,6 @@ class Product extends Model
     {
         return $this->belongsTo(Subcategory::class);
     }
-
-    // // A product can be subjected to multiple comments
-    // public function comments()
-    // {
-    //     return $this->hasMany(Comment::class);
-    // }
 
     // A product can be part of multiple orders
     public function orders()

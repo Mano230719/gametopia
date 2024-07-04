@@ -18,8 +18,6 @@ class Order extends Model
         'town',
         'address',
         'postal_code',
-        'product_id',
-        'order_quantity'
     ];
 
     // An order belongs to a specific user
@@ -28,10 +26,9 @@ class Order extends Model
         return $this->belongsTo(User::class);
     }
 
-    // An order can contain multiple products
-    public function product()
+    public function orderProducts()
     {
-        return $this->belongsTo(Product::class);
+        return $this->hasMany(OrderProduct::class);
     }
 
 }

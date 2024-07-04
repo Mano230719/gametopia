@@ -21,12 +21,9 @@ return new class extends Migration
             $table->string('town')->nullable();
             $table->string('address')->nullable();
             $table->string('postal_code')->nullable();
-            $table->unsignedBigInteger('product_id');
-            $table->integer('order_quantity');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
 
