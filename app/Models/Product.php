@@ -31,15 +31,15 @@ class Product extends Model
         return $this->belongsTo(Subcategory::class);
     }
 
-    // A product can be subjected to multiple comments
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
-    }
+    // // A product can be subjected to multiple comments
+    // public function comments()
+    // {
+    //     return $this->hasMany(Comment::class);
+    // }
 
     // A product can be part of multiple orders
     public function orders()
     {
-        return $this->belongsToMany(Order::class)->withPivot('order_quantity')->withTimestamps();
+        return $this->hasMany(Order::class);
     }
 }

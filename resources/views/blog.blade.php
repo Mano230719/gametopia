@@ -13,24 +13,21 @@
             {{-- Blog Cards Grid --}}
             <div class="grid grid-cols-1 gap-8 mb-8">
                 <!-- Big Blog Card -->
-                <x-blog.big-blog-card></x-blog.big-blog-card>
-
+                @if ($blogs->isNotEmpty())
+                    <x-blog.big-blog-card :blog="$blogs->first()"></x-blog.big-blog-card>
+                @endif
                 {{-- Medium-sized Blog Cards --}}
                 <div class="grid grid-cols-2 gap-8">
-                    <!-- Medium Blog Card 1 -->
-                    <x-blog.medium-blog-card></x-blog.medium-blog-card>
-                    <!-- Medium Blog Card 2 -->
-                    <x-blog.medium-blog-card></x-blog.medium-blog-card>
+                    @foreach ($blogs->skip(1)->take(2) as $blog)
+                        <x-blog.medium-blog-card :blog="$blog"></x-blog.medium-blog-card>
+                    @endforeach
                 </div>
 
                 {{-- Small Blog Cards --}}
                 <div class="grid grid-cols-3 gap-8">
-                    <!-- Small Blog Card 1 -->
-                    <x-blog.small-blog-card></x-blog.small-blog-card>
-                    <!-- Small Blog Card 2 -->
-                    <x-blog.small-blog-card></x-blog.small-blog-card>
-                    <!-- Small Blog Card 3 -->
-                    <x-blog.small-blog-card></x-blog.small-blog-card>
+                    @foreach ($blogs->skip(3)->take(3) as $blog)
+                        <x-blog.small-blog-card :blog="$blog"></x-blog.small-blog-card>
+                    @endforeach
                 </div>
             </div>
         </main>

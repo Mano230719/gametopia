@@ -114,7 +114,7 @@
                         </a>
                     </li>
                     <li class="my-4">
-                        <a href="#"
+                        <a href="{{ route('cart.index') }}"
                             class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                             <i class="fas fa-shopping-cart text-xl text-red-500 mr-2 group-hover:text-black"></i>
                             My Cart

@@ -20,25 +20,29 @@
         <!-- Links -->
         <ul>
             <li class="my-4">
-                <a href="#" class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
+                <a href="{{ route('blog.category', 'pc-games') }}"
+                    class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                     <i class="fas fa-desktop text-xl text-red-500 mr-2 group-hover:text-black"></i>
                     PC Games
                 </a>
             </li>
             <li class="my-4">
-                <a href="#" class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
+                <a href="{{ route('blog.category', 'pc-components') }}"
+                    class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                     <i class="fas fa-microchip text-xl text-red-500 mr-2 group-hover:text-black"></i>
                     PC Components
                 </a>
             </li>
             <li class="my-4">
-                <a href="#" class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
+                <a href="{{ route('blog.category', 'console-games') }}"
+                    class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                     <i class="fas fa-gamepad text-xl text-red-500 mr-2 group-hover:text-black"></i>
                     Console Games
                 </a>
             </li>
             <li class="my-4">
-                <a href="#" class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
+                <a href="{{ route('blog.category', 'boardgames') }}"
+                    class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                     <i class="fas fa-puzzle-piece text-xl text-red-500 mr-2 group-hover:text-black"></i>
                     Board Games
                 </a>

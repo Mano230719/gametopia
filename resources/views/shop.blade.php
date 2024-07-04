@@ -24,17 +24,9 @@
                         <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                         <!-- Product Cards for PC Games Highlights -->
                         <div class="grid grid-cols-5 gap-4 mb-6 px-14">
-                            <!-- Product Card -->
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
+                            @foreach ($pcGames as $product)
+                                <x-shop.product-card :product="$product"></x-shop.product-card>
+                            @endforeach
                         </div>
                     </div>
 
@@ -49,17 +41,9 @@
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for PC Components Highlights -->
                         <div class="grid grid-cols-5 gap-4 mb-6 px-14">
-                            <!-- Product Card -->
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
+                            @foreach ($pcComponents as $product)
+                                <x-shop.product-card :product="$product"></x-shop.product-card>
+                            @endforeach
                         </div>
                     </div>
 
@@ -74,17 +58,9 @@
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for Console Games Highlights -->
                         <div class="grid grid-cols-5 gap-4 mb-6 px-14">
-                            <!-- Product Card -->
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
+                            @foreach ($consoleGames as $product)
+                                <x-shop.product-card :product="$product"></x-shop.product-card>
+                            @endforeach
                         </div>
                     </div>
 
@@ -99,17 +75,9 @@
                         <hr class="mb-8 ml-14 w-2/3 border-t border-red-500">
                         <!-- Product Cards for Board Games Highlights -->
                         <div class="grid grid-cols-5 gap-4 mb-6 px-14">
-                            <!-- Product Card -->
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
-                            <x-shop.product-card></x-shop.product-card>
+                            @foreach ($boardGames as $product)
+                                <x-shop.product-card :product="$product"></x-shop.product-card>
+                            @endforeach
                         </div>
                     </div>
                 </div>

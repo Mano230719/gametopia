@@ -13,20 +13,17 @@ class Comment extends Model
         'content',
         'date',
         'user_id',
-        'product_id',
         'blog_id',
+    ];
+
+    protected $dates = [
+        'date',
     ];
 
     // A comment belongs to a certain user
     public function user()
     {
         return $this->belongsTo(User::class);
-    }
-
-    // A comment can be posted in regards to a product
-    public function product()
-    {
-        return $this->belongsTo(Product::class);
     }
 
     // A comment can be posted in regards to a blog post

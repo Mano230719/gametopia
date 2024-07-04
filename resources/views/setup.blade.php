@@ -8,7 +8,7 @@
         <!-- Main Content -->
         <main class="w-5/6">
             <!-- Sub-navigation Menu -->
-            <x-setup.setup-nav></x-setup.setup-nav>
+            {{-- <x-setup.setup-nav></x-setup.setup-nav> --}}
 
             <!-- Swiper Container -->
             <div class="swiper-container">
@@ -26,12 +26,9 @@
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
                             <div class="grid grid-cols-3 gap-4 mb-6 px-16">
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
+                                @foreach ($setups->take(6) as $setup)
+                                    <x-setup.setup-card :setup="$setup"></x-setup.setup-card>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -49,12 +46,9 @@
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
                             <div class="grid grid-cols-3 gap-4 mb-6 px-16">
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
+                                @foreach ($setups->take(6) as $setup)
+                                    <x-setup.setup-card :setup="$setup"></x-setup.setup-card>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -72,12 +66,9 @@
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
                             <div class="grid grid-cols-3 gap-4 mb-6 px-16">
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
+                                @foreach ($setups->take(6) as $setup)
+                                    <x-setup.setup-card :setup="$setup"></x-setup.setup-card>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -95,12 +86,9 @@
                             <hr class="ml-14 mb-8 w-2/3 border-t border-red-500">
                             <!-- Setup Cards Grid -->
                             <div class="grid grid-cols-3 gap-4 mb-6 px-16">
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
-                                <x-setup.setup-card></x-setup.setup-card>
+                                @foreach ($setups->take(6) as $setup)
+                                    <x-setup.setup-card :setup="$setup"></x-setup.setup-card>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -141,7 +129,7 @@
         .swiper-button-next,
         .swiper-button-prev {
             position: absolute;
-            top: 108%;
+            top: 80%;
             transform: translateY(-50%);
             width: 55px;
             height: 55px;

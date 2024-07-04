@@ -52,10 +52,15 @@
                         <i class="fas fa-user text-red-500 mr-3 group-hover:text-black"></i>
                         Profile
                     </a>
-                    <a href="#"
+                    <a href="{{ route('cart.index') }}"
                         class="flex items-center px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
                         <i class="fas fa-cart-shopping text-red-500 mr-2 group-hover:text-black"></i>
                         My Cart
+                    </a>
+                    <a href="{{ route('orders.index') }}"
+                        class="flex items-center px-4 py-2 text-white hover:bg-red-500 hover:text-black group transition duration-300">
+                        <i class="fa-solid fa-truck text-red-500 mr-2 group-hover:text-black"></i>
+                        My Orders
                     </a>
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf

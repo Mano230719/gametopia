@@ -20,28 +20,28 @@
                 <!-- Links -->
                 <ul>
                     <li class="my-4">
-                        <a href="#"
+                        <a href="{{ route('setup.category', 'gaming-setups') }}"
                             class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                             <i class="fa-solid fa-gamepad text-xl text-red-500 mr-2 group-hover:text-black"></i>
                             Gaming Setups
                         </a>
                     </li>
                     <li class="my-4">
-                        <a href="#"
+                        <a href="{{ route('setup.category', 'home-office-setups') }}"
                             class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                             <i class="fa-solid fa-house text-xl text-red-500 mr-2 group-hover:text-black"></i>
                             Home Office Setups
                         </a>
                     </li>
                     <li class="my-4">
-                        <a href="#"
+                        <a href="{{ route('setup.category', 'content-creation-setups') }}"
                             class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                             <i class="fa-solid fa-paint-brush text-xl text-red-500 mr-2 group-hover:text-black"></i>
                             Content Creation Setups
                         </a>
                     </li>
                     <li class="my-4">
-                        <a href="#"
+                        <a href="{{ route('setup.category', 'minimalist-setups') }}"
                             class="block font-semibold hover:bg-red-500 hover:text-black rounded-xl p-2 group transition duration-300">
                             <i class="fa-solid fa-couch text-xl text-red-500 mr-2 group-hover:text-black"></i>
                             Minimalist Setups

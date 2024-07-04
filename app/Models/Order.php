@@ -14,6 +14,10 @@ class Order extends Model
         'order_date',
         'total_amount',
         'status',
+        'payment_method',
+        'town',
+        'address',
+        'postal_code',
         'product_id',
         'order_quantity'
     ];
@@ -25,9 +29,9 @@ class Order extends Model
     }
 
     // An order can contain multiple products
-    public function products()
+    public function product()
     {
-        return $this->belongsToMany(Product::class)->withPivot('order_quantity')->withTimestamps();
+        return $this->belongsTo(Product::class);
     }
 
 }

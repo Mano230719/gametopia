@@ -11,15 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pc_setups', function (Blueprint $table) {
+        Schema::create('setups', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description');
-            $table->unsignedBigInteger('pc_setup_category_id');
+            $table->string('setup_name');
+            $table->string('motherboard');
+            $table->string('graphics_card');
+            $table->string('processor');
+            $table->string('ram');
+            $table->unsignedBigInteger('setup_category_id');
 
             $table->timestamps();
 
-            $table->foreign('pc_setup_category_id')->references('id')->on('pc_setup_categories')->onDelete('cascade');
+            $table->foreign('setup_category_id')->references('id')->on('setup_categories')->onDelete('cascade');
         });
     }
 
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pc_setups');
+        Schema::dropIfExists('setups');
     }
 };

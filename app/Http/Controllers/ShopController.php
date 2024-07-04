@@ -5,12 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Subcategory;
+use App\Models\Product;
 
 class ShopController extends Controller
 {
     public function showShop()
     {
-        return view('shop');
+        // Fetching products for each category
+        $pcGames = Category::where('category_name', 'pc-games')->first()->products()->limit(10)->get();
+        $pcComponents = Category::where('category_name', 'pc-components')->first()->products()->limit(10)->get();
+        $consoleGames = Category::where('category_name', 'console-games')->first()->products()->limit(10)->get();
+        $boardGames = Category::where('category_name', 'boardgames')->first()->products()->limit(10)->get();
+
+        return view('shop', compact('pcGames', 'pcComponents', 'consoleGames', 'boardGames'));
     }
 
     public function showCategory($category)

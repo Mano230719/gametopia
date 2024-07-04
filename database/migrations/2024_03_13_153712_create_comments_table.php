@@ -16,12 +16,10 @@ return new class extends Migration
             $table->text('content');
             $table->dateTime('date');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('blog_id');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade');
         });
     }
