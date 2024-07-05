@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto py-8 mb-56">
-        <h1 class="text-3xl font-bold mb-4">My Cart</h1>
+    <div class="container mx-auto py-8 mb-56 pb-72">
+        <h1 class="text-3xl text-red-500 font-bold mb-4">My Cart</h1>
 
         @if (session('success'))
             <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4" role="alert">
